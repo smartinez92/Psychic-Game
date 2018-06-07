@@ -1,0 +1,20 @@
+
+p{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 75px;
+    color: darkmagenta;
+    
+}
+
+h5{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.jumbotron{
+    background-color: lightgray;
+}

@@ -1,54 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JavaScript Content!</title>
-</head>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Psychic Game!</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    
+    <script type= "text/javascript" src = "assets/javascript/game.js"> </script>
+  </head>
+
 <body>
 
-  <h1>Drink Selection!</h1>
+  <div class = "jumbotron"> 
+  <h1> Psychic Game</h1>
+  
   <hr>
 
-  <!-- Here we create a generic drink-options div -->
-  <div id="drink-options"></div>
+  <h5>Guess what letter I'm thinking of!</h5>
+  <br>
 
-  <script type="text/javascript">
+  <!-- Here we create the psychic game div. -->
+  <div id="game"> 
 
-    // Array holds all of the drinks available
-    var drinkList = [
-      "Coffee: $5",
-      "Espresso: $7",
-      "Cappuccino: $6",
-      "Latte: $4",
-      "Tea: $3",
-      "Ice Coffee: $6",
-      "Ice Espresso: $8",
-      "Ice Latte: $6",
-      "Ice Tea: $4"
-    ];
+    <!-- Static intro when opening up the page. -->
+    <p>Wins: 0 </p>
+    <p>Losses: 0 </p> 
+    <p>Guesses Left: 9 </p>
+    <p>Your Guesses So Far: </p>
 
-    // 1. Create code that "grabs" the div with the matching id (#drink-options);
-    // ...
-    var grabDrink = document.getElementById("drink-options")
+  </div>
 
-    // ...
-
-
-    // 2. Create a for loop that creates HTML content of all the drinks using JavaScript.
-    // HINT: You will need to use each of the following methods: createElement, textContent, appendChild
-    // ...
-    for( var i = 0; i < drinkList.length; i++){
-
-        var newDiv = document.createElement( "div");
-        newDiv.textContent = drinkList[ i ];
-
-        grabDrink.appendChild( newDiv );
-
-    }
-
-    // ...
-
-  </script>
+  </div>
 
 </body>
 </html>
