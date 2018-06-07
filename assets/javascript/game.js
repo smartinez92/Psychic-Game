@@ -32,7 +32,7 @@ document.onkeyup = function(event) {
 
         guessesSoFar += userGuess + ", ";
 
-        // If condition for when the user correctly guesses the computers letter. Resets.
+        // If condition for when the user correctly guesses the computers letter. Wins goes up 1. Plays sound. Resets guesses and computer picks another letter.
         if( userGuess == computerPick ){
 
             wins++;
@@ -41,7 +41,7 @@ document.onkeyup = function(event) {
             computerPick = computerChoices[Math.floor(Math.random() * computerChoices.length)];
             guessesSoFar = "";
         
-          // Else if condition for when the users guess does not guess it correctly. Resets.
+          // Else if condition for when the users guess does not guess the letter correctly. Guesses go down 1. Plays sound.
           }else if( userGuess !== computerPick ){
         
             guessesLeft--;
@@ -49,7 +49,7 @@ document.onkeyup = function(event) {
         
           }
         
-          // When the user runs out of guesses they will get a loss. Resets.
+          // When the user runs out of guesses they will get a loss. Loss goes up 1. Plays sound. Resets guesses and computer picks another letter.
           if( guessesLeft == 0 ){
         
             loss++;
